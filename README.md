@@ -1,1 +1,1 @@
-# rabin-karka
+# karka-training
