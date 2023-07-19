@@ -13,10 +13,10 @@ print(max(num))'''
 list=[400,45,368,543,243,56]
 num=0
 
-'''for i in list:
+for i in list:
     if i>num:
         num=i
-print(num)'''
+print(num)
 
 '''def function(list,num):
     if list>num:

@@ -10,7 +10,8 @@ while num<100:
 
 num=int(input("i will add the number you give us \nnumber :"))
 
-while num<100:
+while True:
+    
     total=int(input(f"the total is so far {num}\nnumber :"))
 
     num=num+total

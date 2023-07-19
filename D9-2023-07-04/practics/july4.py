@@ -14,13 +14,13 @@ for i, fruit in enumerate(a):
     else:
         print("v",fruit)'''
 
-a=["apple","banana","grapes","orange", 'pineapple']
+'''a=["apple","banana","grapes","orange", 'pineapple']
 
 for i, fruit in enumerate(a):
     if(i<3):
         break
     else:
-        print("f",fruit)
+        print("f",fruit)'''
     
 
 
