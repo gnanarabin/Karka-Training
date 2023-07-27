@@ -21,7 +21,7 @@ if (operator=="%"):
     print(mod)
 if (operator=="**"):
     print(twice)'''
-'''num1=int(input("Enter The First Number :"))
+num1=int(input("Enter The First Number :"))
 operator=input("Enter The Operator :")
 num2=int(input("Enter The Second Number :"))
 
@@ -40,9 +40,9 @@ def function (num1,operator,num2):
         print(num1**num2)
     else:
         print("Please use +,-,*,/,%,** this type Operators")
-function(num1,operator,num2)'''
+function(num1,operator,num2)
 
-num1=int(input("Enter The First Number :"))
+"""num1=int(input("Enter The First Number :"))
 operator=input("Enter The Operator :")
 num2=int(input("Enter The Second Number :"))
 
@@ -76,7 +76,7 @@ def twice (num1,operator,num2):
         print(num1**num2)
     else:
         print("Please use + , - , * , / , % , ** this type operators")
-twice(num1,operator,num2)
+twice(num1,operator,num2)"""
 
 
 

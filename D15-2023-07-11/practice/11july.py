@@ -15,7 +15,7 @@ while i<10:
     if i==5:
         break'''
 
-i=1
+"""i=1
 while i<100:
     i=i+1
-    print(i)
+    print(i)"""

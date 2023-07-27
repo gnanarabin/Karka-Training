@@ -26,9 +26,11 @@ file.close()'''
 file.write("welcome to my page")
 file.close()'''
 
-file=open("/home/rabin/new/read.txt","r")
+'''file=open("/home/rabin/new/read.txt","r")
 
 for i in file:
-    print(i.split())
+    print(i.split())'''
+
+
 
 

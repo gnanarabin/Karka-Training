@@ -1,3 +1,4 @@
+from pprint import pp
 my_resume={
         "name":"Rabin",
         "e-mail":"jnrabin001@gmail.com",
@@ -70,9 +71,9 @@ my_resume={
         }
 }
 
-for i in my_resume["personal_details"]:
+"""for i in my_resume["personal_details"]:
     print(my_resume["personal_details"][i])
-    #print(i)
+    #print(i)"""
 
 
 

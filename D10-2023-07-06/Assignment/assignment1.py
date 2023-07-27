@@ -6,7 +6,11 @@ prods = [500, 200, 700, 1000]
 
 Output,  ["INR 500", "INR 200", "INR 300", "INR 1000"]'''
 
-
+num=[2,6,5,9,4]
+total=0
+for i in num:
+    total=total+i
+print(total)
 
 '''num=[2,6,5,9,4]
 total=0

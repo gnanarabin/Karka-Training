@@ -1,3 +1,4 @@
+from pprint import pp
 
 
 education_details=[
@@ -21,10 +22,15 @@ education_details=[
 ]
 
 
-for i in education_details:
-    print (i["study"])
+"""for i in education_details:
+    pp (i["study"])
     for k in education_details:
-        print(i["sem_marks"])
+        pp(i["sem_marks"])"""
+
+for i in education_details:
+    pp (i["study"])
+    for k in i["sem_marks"][0]["subjects"]:
+        pp(k)
 
     
 

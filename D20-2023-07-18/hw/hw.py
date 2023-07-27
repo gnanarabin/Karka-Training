@@ -36,6 +36,30 @@ print(vegetable)
 dic={"fruits":fruits,"vegetables":vegetable}
 print(dic)
 
+            #   O R  
+            
+fruit=[]
+vegetable=[]
+
+for i in items_list:
+    if i["category"]=="Fruits":
+        a=i["name"]
+        fruit.append(a)
+
+
+    elif i["category"]=="Vegetables":
+        b=i["name"]
+        vegetable.append(b)
+        
+print(fruit)
+print(vegetable)
+
+d={
+    "fruits":fruit,"vegetables":vegetable
+}
+print (d)
+
+
 
       
 

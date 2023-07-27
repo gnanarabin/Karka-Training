@@ -60,17 +60,19 @@ p_list=[
 #2.Determine and display the number of players who have scored more than 10 centuries from the list.
 
 
-def cen(p_list):
-    name=[ ]
-    centuries=[]
+"""def cen(p_list):
+    
     for i in p_list:
         if i["centuries"]>10:
             name=i["name"]
             centuries=i["centuries"]
-            return name,centuries
+            print(f"name :{name}\ncenturies :{centuries}")
         
-a=cen(p_list)
-print(a)   
+cen(p_list)"""
+"""num=0
+for i in p_list:
+    print(i["batting_score"])"""
+ 
 
 
 

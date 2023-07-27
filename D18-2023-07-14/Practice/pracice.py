@@ -1,8 +1,9 @@
+from pprint import pp
 name=[
         {
             "name":"aswsin",
             "place":"nagercoil",
-            "hobbies":["cricket","movies"]
+            "hobbies":["cricket","movies"],
         },
 
         {
@@ -44,9 +45,12 @@ name=[
 
 #print(name[3]["hobbies"])
 
-for i in name[3]["hobbies"] :
+"""for i in name[3]["hobbies"] :
 
-    print(i)
+    print(i)"""
+for i in name:
+    hobie=i["hobbies"]
+    print(hobie)
 
 
 '''name1={   

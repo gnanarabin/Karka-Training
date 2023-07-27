@@ -40,13 +40,16 @@ a=[
         },
 ]
 
+for i in a[0]["sslc"]:
+    print(a[0]["sslc"][i])
+
 
 
 #print(name[0]["sslc"]["tamil"])
 
 
 
-for i in a:
+"""for i in a:
     #print(i["sslc"]["tamil"])
 
     tamil=i["sslc"]["tamil"]
@@ -61,7 +64,9 @@ for i in a:
 
     #print(f"{name},{total}")
 
-    length=total/5
+    l=len(i["sslc"])
+
+    length=total/l
     print(length)
 
 
@@ -75,8 +80,7 @@ for i in a:
         print(f"{name}_you will eligible to choose maths biology")
 
     elif length>85:
-        print(f"{name}_you will eligible to choose computer science")
-
+        print(f"{name}_you will eligible to choose computer science")"""
     
 
 

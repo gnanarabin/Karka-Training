@@ -1,10 +1,12 @@
-'''a=["apple","banana","grapes","orange", 'pineapple']
+"""a=["apple","banana","grapes","orange", 'pineapple']
 
 for i,fruit in enumerate(a):
     if (i<=2):
         print("h",fruit)
     else:
-        break'''
+        break"""
+
+
 
 '''a=["apple","banana","grapes","orange", 'pineapple']
 
