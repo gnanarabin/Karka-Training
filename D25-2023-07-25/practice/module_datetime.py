@@ -6,15 +6,15 @@ b=a.year  # .year, .month, .day , .hour , .minute , .second
 print(b)
 c=datetime.now()
 print(c)
-d=c.strftime("%r") # (%h,Y,D,m,etc....)
+d=c.strftime("%S") # (%h,Y,D,m,etc....)r-->time, 
 print(d)"""
 
-"""a="26, july, 2023"
-b=datetime.strptime(a,"%d, %B, %Y")   # %B is use for convert sring to number ('july-7')
+a="26 jul 2023"
+b=datetime.strptime(a,"%d %b %Y")   # %B is use for convert sring to number ('july-7')
+print(b)
 c=b.month
-print(c) """
-a="26, july, 2023"
-b=datetime.strptime(a,"%d, %B, %Y") 
+print(c) 
+
 
 """date_string = "21 June, 2018"
 

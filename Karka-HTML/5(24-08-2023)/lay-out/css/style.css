@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+body{
+    background-color: rgb(191, 191, 191);
+    padding: 20px 20px;
+}
+header{
+    /* border: 1px solid black; */
+    background-color: white;
+    text-align: center;
+    padding: 30px 0px;
+}
+header h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+header p{
+    margin-top: 40px;
+    /* border: 1px solid black; */
+    font-weight: bold;
+}
+nav{
+    /* border: 1px solid black; */
+    padding: 10px 0px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+.left_div{
+    display: inline-block;
+}
+
+.left_div a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+.right_div {
+    /* border: 1px solid black; */
+    width: 87%;
+    display: inline-block;
+    text-align: right;
+}
+.right_div a{
+    color: white;
+    text-decoration: none;
+}
+.main_section{
+    
+    /* margin-left: 20px; */
+    width: 70%;
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+.main1{
+    /* width:97% ; */
+    padding: 20px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.main1 p{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.main1 div{
+    background-color: grey;
+    width: 100%;
+    height: 300px;
+}
+.img_div p{
+    padding: 20px 20px;
+}
+
+/* Sub section */
+.sub_section{
+    background-color: rgb(191, 191, 191);
+    margin-left: 20px;
+    /* border: 1px solid black; */
+    width: 28.3%;
+    vertical-align: top;
+    display: inline-block;
+}
+.submain1{
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px 20px;
+
+}
+.submain1 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submain1 div{
+    background-color: grey;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.submain1 div p{
+    padding: 20px 20px;
+    
+
+}
+.submain1 p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.submain2{
+    
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: white;
+}
+.submain2 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submain2 div{
+    background-color: grey;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+.submain2 div p{
+    padding: 50px 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+.submain3{
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* margin-bottom: 20px; */
+    padding: 10px 20px;
+    background-color: white;
+
+}
+.submain3 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submain3 p{
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+footer{
+    padding: 40px 0px;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+}

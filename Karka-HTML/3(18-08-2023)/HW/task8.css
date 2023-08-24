@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.root{
+    padding: 10px;
+    background-color: black;    
+    width: 98.7%;
+    text-align: center;
+    
+}
+.head{
+    background-color: pink;
+    width: 99%;
+    padding: 40px 0px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.nav{
+    background-color: blue;
+    width: 99%;
+    padding: 40px 0px;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+.main{
+     
+    display: flex;
+    width: 99%;
+    margin-bottom: 20px;
+            
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    background-color: pink;
+    width: 30%;
+    font-size: 30px;
+    padding: 140px 0px;
+    
+}
+.content{
+    background-color: white;
+    width: 69%;
+    margin-left: 20px;
+    border: 1px solid black;
+    font-size: 30px;
+    padding: 140px 0px;
+}
+.footer{
+    background-color: rgb(81, 147, 151);
+    width: 99%;
+    padding: 40px 0px;
+    font-size: 30px;
+}

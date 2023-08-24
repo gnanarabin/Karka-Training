@@ -18,7 +18,7 @@ dic_name={"name":name}
 
 print(dic_name)'''
 
-fruits=[]
+"""fruits=[]
 vegetable=[]
 
 
@@ -34,32 +34,38 @@ print(fruits)
 print(vegetable)
 
 dic={"fruits":fruits,"vegetables":vegetable}
-print(dic)
+print(dic)"""
 
             #   O R  
             
-fruit=[]
-vegetable=[]
-
-for i in items_list:
-    if i["category"]=="Fruits":
-        a=i["name"]
-        fruit.append(a)
 
 
-    elif i["category"]=="Vegetables":
-        b=i["name"]
-        vegetable.append(b)
-        
-print(fruit)
-print(vegetable)
+def fun(items_list):
+    fruit=[]
+    vegetable=[]
+    d=[]
 
-d={
-    "fruits":fruit,"vegetables":vegetable
-}
-print (d)
+    for i in items_list:
+        if i["category"]=="Fruits":
+            a=i["name"]
+            fruit.append(a)
 
 
+        elif i["category"]=="Vegetables":
+            b=i["name"]
+            vegetable.append(b)
+            
+    # print(fruit)
+    # print(vegetable)
+
+    d1={
+        "fruits":fruit,"vegetables":vegetable
+    }
+    d.append(d1)
+    return d
+
+a=fun(items_list)
+print(a)
 
       
 

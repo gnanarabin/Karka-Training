@@ -5,3 +5,4 @@ c=a.hour  # .hour , .minute , .second
 print(c)
 
 
+

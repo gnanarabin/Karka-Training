@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    
+    width: 99%;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    
+
+}
+.head{
+    width: 100%;
+    border:1px solid black;
+    padding: 40px 0px;
+    font-size: 30px;
+}
+.cont{
+    width: 100%;
+    padding: 143px 0px;
+    font-size: 30px;
+}
+

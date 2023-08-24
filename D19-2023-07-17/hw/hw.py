@@ -71,9 +71,9 @@ my_resume={
         }
 }
 
-"""for i in my_resume["personal_details"]:
+for i in my_resume["personal_details"]:
     print(my_resume["personal_details"][i])
-    #print(i)"""
+    #print(i)
 
 
 

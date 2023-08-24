@@ -1,48 +1,54 @@
-a=int(input("enter :"))
+"""a=int(input("enter :"))
 
 for i in range(0,a):
-    print("*"*a)
+    print("*"*a)"""
     
-"""a=int(input("Number :"))
+# a=int(input("Number :"))
 
-for i in range(a):
-    for k in range(a):
-        print("*",end="")
-    print("")"""
+# for i in range(a):
+#     for k in range(a):
+#         print("*",end="")
+#     print("")
 
-"""a=5
 
-for i in range(a):
+
+# a=5
+
+# for i in range(a):
     
-    for k in range(i):  #or i+1
-        print("*",end="")
-    print("")"""
+#     for k in range(i+1):  #or i+1
+#         print("*",end="")
+#     print("")
 
-"""a=5
-n=1
-for i in range(a):
+
+
+# a=5
+# n=1
+# for i in range(a):
     
-    for k in range(0,a):
-        print(n,"",end="")
-        n=n+1
+#     for k in range(0,a):
+#         print(n,"",end="")
+#         n=n+1
 
-    print("")"""
+#     print("")
 
-"""a=5
+# a=5
 
-for i in range(1,a*a+1):
-    print(i,end="")
-    if i%a==0:
-        print(" ")"""
+# for i in range(1,a*a+1):
+#     print(i,"",end="")
+#     if i%a==0:
+#         print(" ")
     
-"""a=5
+# a=5
 
-for i in range(a*a,0,-1):
+# for i in range(a*a,0,-1):
+#     # print(i)
     
-    if i%a==0:
-        print("")
+#     if i%a==0:
+#         print(" ")
 
-    print(i,end="")"""
+#     print(i,"",end="")
+    
 
 
     

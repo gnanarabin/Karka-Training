@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(174, 244, 244);
+}
+header{
+    background-color: rgb(135, 239, 252);
+    width: 99.8%;
+    padding: 40px 0px;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+}
+section{
+    /* border: 1px solid black; */
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+
+}
+.intro{
+    /* border: 1px solid black; */
+    width: 50%;
+    padding: 200px 0px;
+    margin-bottom: 20px;
+    background-color: rgb(135, 239, 252);
+
+}
+.main{
+    /* border: 1px solid black; */
+    width: 48.4%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+.main .hero{
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 120px 0px;
+    margin-bottom: 20px;
+    background-color: rgb(135, 239, 252);
+
+
+}
+.main .action{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 55px 0px;
+    background-color: rgb(255, 255, 0);
+
+}
+.feature{
+    width: 95%;
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+    padding: 70px 0px;
+    margin-bottom: 20px;
+    background-color: rgb(135, 239, 252);
+
+}
+.main2{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.copy{
+    width: 50%;
+    /* border: 1px solid black; */
+    padding: 30px 0px;
+    background-color: rgb(135, 239, 252);
+
+}
+.call-action{
+    margin-left: 20px;
+    /* border: 1px solid black; */
+    width: 49%;
+    padding: 55px 0px;
+    background-color: rgb(255, 255, 0);
+}
+footer{
+    width: 99.8%;
+    padding: 30px 0px;
+    text-align: center;
+    /* border: 1px solid black; */
+    background-color: rgb(135, 239, 252);
+
+}

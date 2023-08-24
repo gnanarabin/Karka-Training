@@ -42,6 +42,7 @@ a=[
 
 for i in a[0]["sslc"]:
     print(a[0]["sslc"][i])
+    
 
 
 

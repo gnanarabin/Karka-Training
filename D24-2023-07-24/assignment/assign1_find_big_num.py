@@ -42,18 +42,18 @@ elif num3>num1:
     if num3>num2:
         print(num3)'''
 
-"""num1=int(input("Enter the 1st number :"))
-num2=int(input("Enter the 2nd number :"))
-num3=int(input("Enter the 3rd number :"))
-if num1>num2:
-    if num1>num3:
-        print(num1)
-    else:
-        print(f"{num3} gerater")
-elif num2>num1:
-    if num2>num3:
-        print(num2)
-    else:(f"{num2} greater")"""
+# num1=int(input("Enter the 1st number :"))
+# num2=int(input("Enter the 2nd number :"))
+# num3=int(input("Enter the 3rd number :"))
+# if num1>num2:
+#     if num1>num3:
+#         print(num1)
+#     else:
+#         print(f"{num3} gerater")
+# elif num2>num1:
+#     if num2>num3:
+#         print(num2)
+#     else:(f"{num2} greater")
 
 
 

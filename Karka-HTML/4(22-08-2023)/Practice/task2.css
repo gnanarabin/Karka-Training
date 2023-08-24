@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    border: 1px solid black;
+    margin: auto;
+    width: 98%;
+    text-align: center;
+}
+header{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 40px 0px;
+    
+}
+nav{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 40px 0px;
+    margin-bottom: 10px;
+    
+}
+footer{
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 40px 0px;
+}
+section{
+    width: 100%;
+    
+}
+section div{
+    border: 1px solid black;
+    padding: 100px 0px;
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
