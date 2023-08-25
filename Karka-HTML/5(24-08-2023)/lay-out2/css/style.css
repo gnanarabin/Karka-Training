@@ -19,6 +19,7 @@ nav{
     margin: auto;
     padding: 30px 0px;
     background-color: pink;
+    margin-bottom: 20px;
 }
 .nav1 a{
     margin-left: 100px;
@@ -52,7 +53,7 @@ section{
     background-color: white;
 }
 .main1{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 70%;
     /* border: 1px solid black; */
     display: inline-block;
