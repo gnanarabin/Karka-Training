@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 100%;
+    /* border: 1px solid black; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    /* margin-top: 30%; */
+    border: 1px solid black;
+    width: 60%;
+    /* height: 80vh; */
+    padding: 40px;
+    box-shadow: 5px 5px 5px 5px   black;
+}
+form{
+    width:100% ;
+    /* border: 1px solid black; */
+}
+
+.sub-div{
+    display: flex;
+}
+.sub-div1{
+    /* border: 1px solid red; */
+    width: 40%;
+}
+.sub-div1 img{
+    width: 100%;
+    /* padding: 40px 0px; */
+    height: 200px;
+    background-color: grey;
+}
+.sub-div1 div{
+    /* border: 1px solid black; */
+    margin-top: 12px;
+    text-align: center;
+    /* height: 40px; */
+}
+.sub-div1 input{
+    width: 100%;
+    height: 35px;
+}
+.sub-div2{
+    margin-left: 20px;
+}
+.sub-div3{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.sub-div3 div{
+    /* justify-content: space-between; */
+    /* border: 1px solid black; */
+    width: 40%;
+}
+.sub-div3 input{
+    width: 100%;
+    border: 2px solid black;
+
+}
+.sub1{
+    margin-top: 30px;
+}
+.sub1 input{
+    border: 2px solid black;
+
+}
+.sub-main{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.sub-main div {
+    width: 45%;
+    /* border: 1px solid black; */
+}
+.sub-main div input{
+    border: 2px solid black;
+
+}
+.dob{
+    height: 65px;
+}
+.sub-main div textarea{
+    width: 100%;
+    border: 2px solid black;
+
+}
+.radio{
+    border: 2px solid black;
+    width: 45%;
+    height: 45px;
+    border-radius: 5px;
+}
+.radio input{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.radio .lab{
+    margin-left: 7px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.button button{
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.drop select{
+    border: 2px solid black;
+}
+.lan{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.lan input{
+    margin-top: 20px;
+    margin-left: 10px;
+}

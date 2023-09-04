@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" value="football" name="game" id="a">football
+    <input type="checkbox" value="boxing" name="game" id="a">boxing
+    <input type="checkbox" value="cricket" name="game" id="a">cricket
+    <br>
+    <input type="button" value="submit" onclick="get()">
+</body>
+<script>
+
+
+    function get(){
+        names=document.getElementById("a");
+        console.log(names)
+    }
+
+    function get(){
+            console.log("hi")
+            var name =document.getElementsByName("game");
+            console.log(name)
+
+            for (i=0; i<name.length; i++){
+            console.log(name[i].checked);
+            if (name[i].checked){
+                console.log("truevalue",name[i].value);
+            }
+        }
+        }
+</script>
+</html>

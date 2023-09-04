@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+  </head>
+  <body>
+    <h1>Page 2</h1>
+    <p>The value you entered on the first page was:</p>
+    <p id="value"></p>
+  </body>
+  <script>
+    window.onload = function() {
+      // Get the value from localStorage
+      var value = localStorage.getItem('myValue');
+      
+      // Display the value on the page
+      document.getElementById('value').innerHTML=value;
+    };
+  </script>
+</html>

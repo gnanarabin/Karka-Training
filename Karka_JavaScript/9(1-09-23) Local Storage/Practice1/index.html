@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- username :<input type="text" id="user"> -->
+</body>
+<script>
+
+    // method 1
+    name="rabin"
+    localStorage.setItem("name",name)
+    var a=localStorage.getItem("name")
+    console.log(a)
+
+    // its use for store data from local storage.....
+
+    // method 2
+    const data={
+        name:"Rabin",
+        degree:"BE"
+    }
+    var ans=JSON.stringify(data)
+    local=localStorage.setItem("obj",ans)
+    var b=localStorage.getItem("obj")
+    console.log(b)
+    var str=JSON.parse(b)
+    console.log(str)
+
+    // remove the data from local storage...
+    localStorage.removeItem("obj")
+
+</script>
+</html>

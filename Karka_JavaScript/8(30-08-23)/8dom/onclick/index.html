@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="this.innerHTML = 'Welcome To My Site!'">Click this text!</h1>
+    
+    <hr>
+
+    <p>Do u want to see date & Time</p>
+
+    <button onclick="displayDate()">Today is ?</button>
+
+    <script>
+    function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+
+    <p id="demo"></p>
+    <hr>
+</body>
+</html>

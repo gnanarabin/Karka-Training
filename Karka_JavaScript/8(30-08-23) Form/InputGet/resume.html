@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- <script src="resume.js"></script> -->
+
+    
+</head>
+<body>
+    <section class="main-1">
+        <div class="name">
+            <h2 id="f-name"></h2>
+            <h2 id="l-name"></h2>
+        </div>
+        <div class="banner">
+            <h5>Personal-info</h5>
+        </div>
+        <br>
+        <div class="personal">
+            <h6>Address :</h6>
+            <span id="address"></span>
+            <br>
+            <span id="pin-code"></span>
+            <br>
+            <br>
+            <h6>D-O-B :</h6>
+            <p id="dob"></p>
+            <h6>Martial :</h6>
+            <p id="martial"></p>
+            <h6>phone :</h6>
+            <p id="phone_no"></p>
+            <h6>Email :</h6>
+            <a href="#" id="email"></a>
+            <br>
+            <br>
+            <h6>Linked-in :</h6>
+            <a href="#" id="linked-in"></a>
+        </div>
+        <br>
+
+        <div class="banner">
+            <h5>Skills</h5>
+        </div>
+        <div class="skill">
+            <p id="skill"></p>
+        </div>
+        <div class="banner">
+            <h5>Language </h5>
+        </div>
+        <div class="language">
+            <p id="language"></p>
+        </div>
+        <!-- <div class="banner">
+            <h5>Hobbies </h5>
+        </div>
+        <div class="hobbies">
+            <p>evugyer</p>
+        </div> -->
+        
+    </section>
+    <section class="main-2">
+        <div class="sub-banner">
+            <h5>Objective </h5>
+        </div>
+        <div class="Description">
+            <p id="objective"></p>
+        </div>
+        <div class="sub-banner">
+            <h5>Experience </h5>
+        </div>
+        <div class="Description">
+            <div class="pos">
+                <h6>Position :</h6>
+                <h6 class="h" id="position"></h6>
+            </div>
+            <div class="pos">
+                <h6>Company :</h6>
+                <h6 class="h" id="company"></h6>
+            </div>
+            <br>
+            <div>
+                <h6>Description :</h6>
+                
+                <span id="experience"></span>            
+            </div>
+            
+        </div>
+        <br>
+
+        <div class="sub-banner">
+            <h5>Education  </h5>
+        </div>
+        <div class="edu-div ">
+            
+            <div class="education">
+                <h6>SSLC :</h6>
+                <br>
+                <div class="pos">
+                    <h6>School :</h6>
+                    <h6 class="h" id="school1"></h6>
+                </div>
+                <div class="pos">
+                    <h6>Passed-out :</h6>
+                    <h6 class="h" id="y_passing1"></h6>
+                </div>
+                <div class="pos">
+                    <h6>percentage :</h6>
+                    <h6 class="h" id="percentage1"></h6>
+                </div>
+                
+            </div>
+            <br>
+            <div class="education edu-sub">
+                <h6>HSC :</h6>
+                <br>
+                <div class="pos">
+                    <h6>School :</h6>
+                    <h6 class="h" id="school2"></h6>
+                </div>
+                <div class="pos">
+                    <h6>Passed-out :</h6>
+                    <h6 class="h" id="y_passing2"></h6>
+                </div>
+                <div class="pos">
+                    <h6>percentage :</h6>
+                    <h6 class="h" id="percentage2"></h6>
+                </div>
+                
+            </div>
+            
+        </div>
+        <br>
+        <hr>
+        
+        <div class="edu-div2">
+                <h6>DEGREE :</h6>
+                <br>
+                <div class="pos">
+                    <h6>College :</h6>
+                    <h6 class="h" id="clg_name"></h6>
+                </div>
+                <div class="pos">
+                    <h6>Passed-out :</h6>
+                    <h6 class="h" id="clg_passing"></h6>
+                </div>
+                <div class="pos">
+                    <h6>percentage :</h6>
+                    <h6 class="h" id="clg_percentage"></h6>
+                </div>
+                <div class="pos">
+                    <h6>project :</h6>
+                    
+                    <p id="project"></p>
+                </div>
+        </div>
+        <div class="sub-banner">
+            <h5>Hobbies </h5>
+        </div>
+        <div class="hobbies hob">
+            <p id="hobbies"></p>
+        </div>
+        
+        
+    </section>
+    
+</body>
+<script>
+    output=localStorage.getItem("data");
+    obj=JSON.parse(output)
+    document.getElementById("f-name").innerHTML=obj.f_name;
+    document.getElementById("l-name").innerHTML=obj.l_name;
+    document.getElementById("address").innerHTML=obj.address;
+    document.getElementById("pin-code").innerHTML=obj.pin_code;
+    document.getElementById("dob").innerHTML=obj.dob;
+    document.getElementById("martial").innerHTML=obj.martial;
+    document.getElementById("phone_no").innerHTML=obj.phone_no;
+    document.getElementById("linked-in").innerHTML=obj.Linkedin;
+    document.getElementById("skill").innerHTML=obj.skill;
+    document.getElementById("email").innerHTML=obj.email;
+    document.getElementById("language").innerHTML=obj.language;
+    document.getElementById("position").innerHTML=obj.position;
+    document.getElementById("company").innerHTML=obj.company;
+    document.getElementById("experience").innerHTML=obj.experience;
+    document.getElementById("objective").innerHTML=obj.objective;
+    document.getElementById("school1").innerHTML=obj.school1;
+    document.getElementById("y_passing1").innerHTML=obj.y_passing1;
+    document.getElementById("percentage1").innerHTML=obj.percentage1;
+    document.getElementById("school2").innerHTML=obj.school2;
+    document.getElementById("y_passing2").innerHTML=obj.y_passing2;
+    document.getElementById("percentage2").innerHTML=obj.percentage2;
+    document.getElementById("clg_name").innerHTML=obj.clg_name;
+    document.getElementById("clg_passing").innerHTML=obj.clg_passing;
+    document.getElementById("clg_percentage").innerHTML=obj.clg_percentage;
+    document.getElementById("project").innerHTML=obj.project;
+    document.getElementById("hobbies").innerHTML=obj.hobbies;
+    console.log(obj)
+</script>
+</html>

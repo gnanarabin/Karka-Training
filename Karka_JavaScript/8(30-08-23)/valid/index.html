@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your HTML head content -->
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" name="username" placeholder="Username">
+        <input type="email" name="email" placeholder="Email">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const searchParams = new URLSearchParams(formData);
+            const nextPageURL = `next.html?${searchParams.toString()}`;
+            window.location.href = nextPageURL;
+        });
+    </script>
+</body>
+</html>

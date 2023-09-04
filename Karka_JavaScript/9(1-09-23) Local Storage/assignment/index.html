@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="page2.html">
+        <label for="">username :</label>
+        <input type="text" id="user" name="user">
+        <br>
+        <br>
+        <label for="">email :</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <br>
+        <label for="">Hobbies :</label>
+        <input type="text" id="hobbies" name="hobbies">
+        <br>
+        <input type="date" name="date"  id="date">
+        <!-- <textarea name="hobbies" id="hobbies" cols="30" rows="10" ></textarea> -->
+        <br>
+        <br>
+        <button onclick="get()">Submit</button>
+        <!-- <input type="button" value="Submit" onclick="get()"> -->
+    </form>
+</body>
+    <script>
+
+        const formdata={};
+        
+        function get(){
+            const inputfields = document.querySelectorAll("input")
+            // const inputfield = document.querySelectorAll("textarea")
+            inputfields.forEach(input => {
+                formdata[input.name] =input.value;
+            })
+            // inputfield.forEach(textarea => {
+            //     formdata[textarea.id] = textarea.value;
+            // })
+            console.log(formdata)
+            str=JSON.stringify(formdata)
+            localStorage.setItem("data",str);
+            // localStorage.removeItem("data")
+
+
+        }
+
+        // function get(){
+        //     var a=document.getElementById("user").value;
+        //     var b=document.getElementById("email").value;
+        //     var c=document.getElementById("hobbies").value;
+
+        //     data={
+        //         "user":a,
+        //         "email":b,
+        //         "hobbies":c
+        //     }
+
+        //     str=JSON.stringify(data)
+        //     localStorage.setItem("data",str);
+            
+        //     window.location.href="page2.html";
+
+        // }
+
+        
+        
+    </script>
+
+</html>

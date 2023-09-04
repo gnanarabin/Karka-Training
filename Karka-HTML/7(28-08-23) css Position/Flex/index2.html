@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 20px;
+        }
+        header{
+            width: 100%;
+            padding: 40px 0px;
+            background-color: rgb(160, 255, 244);
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        section{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            text-align: center;
+
+        }
+        aside{
+            width: 30%;
+            background-color: rgb(172, 222, 255);
+            padding: 250px 0px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            background-color: red;
+            /* vertical-align: top; */
+            /* padding: 167px 0px; */
+            height: 530px;
+            width: 70%;
+            margin-left: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: flex-end;
+        
+        }
+        .sub{
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid rgb(255, 255, 255); */
+            align-items: flex-start;
+            justify-content: space-around;  
+            margin-bottom: 20px;
+
+            
+        }
+        .sub div{
+            width: 300px;
+            height: 200px;
+            background-color: grey;
+        }
+        
+        footer{
+            margin-top: 20px;
+            width: 100%;
+            padding: 40px 0px;
+            background-color: rgb(160, 255, 244);
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <section>
+        <aside>aside</aside>
+        <div class="main">
+            <div class="sub">
+                <div>image</div>
+                <div>image</div>
+                <div>image</div>
+            </div>
+        </div>
+    </section>
+    <footer>Footer</footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h3>Todo</h3>
+            <div>
+                <p id="date1"></p>
+                <p id="date2"></p>
+            </div>
+
+        </header>
+        <hr>
+        <div class="input">
+            <input type="text" placeholder="Enter Your Task" id="task">
+            <button onclick="get()">＋</button>
+        </div>
+        <br>
+        <div class="content">
+            <div class="form-check">
+                <ul id="a">
+                    <li></li>
+                </ul>
+            </div>   
+        </div>
+    </section>
+</body>
+<script>
+    
+    let date1 = new Date().toUTCString().slice(0,3);
+
+    let date2 = new Date().toUTCString().slice(5, 12);
+    data={
+        main_date:date1,
+        sub_date:date2
+    }
+    console.log(data)
+    a=JSON.stringify(data);
+    localStorage.setItem("data",a)
+    b=JSON.parse(a);
+    c=localStorage.getItem("data");
+    console.log(c)
+    document.getElementById("date1").innerHTML=data.main_date;
+    document.getElementById("date2").innerHTML=data.sub_date;
+
+    function get(){
+        // alert("hi")
+        var li = document.createElement("li")
+
+        input=document.getElementById("task").value;
+        console.log("task",input)
+        str=JSON.stringify(input);
+        localStorage.setItem("task",str);
+        obj=localStorage.getItem("task");
+
+        document.getElementById("a").append(obj);
+    }
+    
+</script>
+</html>
