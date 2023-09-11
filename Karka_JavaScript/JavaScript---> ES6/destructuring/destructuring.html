@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// let name=["Rabin","Perumal","Dhanush"]
+
+// let[a,b,c,d]=name
+
+// console.log(d)
+
+
+let obj={
+  name:"rabin",
+  age:22,
+  address:{
+    place:"nagercoil",
+    hobbies:["cricket","football"]
+  }
+}
+
+// we must get all key, then we get value
+
+let{name,age,address}=obj
+console.log(name)
+
+let{place,hobbies}=address
+console.log(place)
+
+let[c,f]=hobbies
+console.log(c)
+</script>
+</html>

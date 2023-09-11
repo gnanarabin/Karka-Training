@@ -1,0 +1,22 @@
+arrow:
+
+single.line code            formal writting
+not declarable              declarable
+default-variable            traditional way
+not a constructor           may changes a constructor function
+
+each function use           Basic JS
+by this method
+
+No Arguments                Arguments     
+
+can't call a function       we can call function above and bottom
+above the function 
+
+
+
+
+
+
+   JavaScript:
+can't access function before initialization

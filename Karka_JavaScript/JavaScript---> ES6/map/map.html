@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<body>
+
+</body>
+<script>
+    let bikes=[
+    {
+      name:"platina",
+      showroom_price:70000,
+      road_price:75000,
+      tax:15,
+      milage:75
+    },
+    {
+      name:"duke",
+      showroom_price:150000,
+      road_price:170000,
+      tax:20,
+      milage:30
+    },
+    {
+      name:"royal_Enfield",
+      showroom_price:200000,
+      road_price:230000,
+      tax:15,
+      milage:35
+    },
+    {
+      name:"dio",
+      showroom_price:75000,
+      road_price:80000,
+      tax:10,
+      milage:45
+    }
+    
+    ]
+    
+    // let bike=bikes.map((value,index)=>{
+    //   if (value.milage>50 && value.road_price<=100000){
+    //     return {"name":value.name,"type":"economy"};
+    //   }
+    //   else{
+    //   return {"name":value.name,"type":"Race"};
+    //   }
+    // })
+    // console.log(bike)
+    
+    
+    
+    
+    let bike=bikes.map(value=>{
+      if (value.milage>50 && value.road_price<=100000){
+        value["type"]="Economy"
+        // return value
+    }
+    else{
+      value["type"]="Race"
+      // return value
+    }
+      value["road_price"]=((value.showroom_price*(value.tax/100))+value.showroom_price)
+      return value
+    }
+    )
+    console.log(bike)
+</script>
+</html>

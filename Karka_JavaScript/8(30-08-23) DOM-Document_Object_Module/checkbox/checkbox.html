@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="checkbox" value="football" name="game" id="a">football
+    <input type="checkbox" value="football" name="game" id="a" >football
     <input type="checkbox" value="boxing" name="game" id="a">boxing
     <input type="checkbox" value="cricket" name="game" id="a">cricket
     <br>
@@ -26,7 +26,7 @@
             console.log(name)
 
             for (i=0; i<name.length; i++){
-            console.log(name[i].checked);
+            console.log("log",name[i].checked);
             if (name[i].checked){
                 console.log("truevalue",name[i].value);
             }

@@ -23,7 +23,7 @@ section{
     background-color: orange;
     padding: 40px 20px;
     width: 30%;
-    height: 400px;
+    /* height: 400px; */
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -58,4 +58,9 @@ input{
 }
 .form-check{
     margin-top: 18px;
+    border: 1px solid black;
+}
+.notification{
+    width: 100%;
+    border: 1px solid black;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -18,17 +19,19 @@
 
         </header>
         <hr>
+        <div class="notification" id="notification-container"> </div>
+
         <div class="input">
-            <input type="text" placeholder="Enter Your Task" id="task">
-            <button onclick="get()">＋</button>
+            
+
+            <input type="text" placeholder="Enter Your Task" id="task" aria-placeholder="   Enter your Task...">
+            <button onclick="add()">＋</button>
         </div>
         <br>
-        <div class="content">
-            <div class="form-check">
-                <ul id="a">
-                    <li></li>
-                </ul>
-            </div>   
+        <div class="content" id="result_content">
+            
+                
+            
         </div>
     </section>
 </body>
@@ -50,18 +53,72 @@
     document.getElementById("date1").innerHTML=data.main_date;
     document.getElementById("date2").innerHTML=data.sub_date;
 
-    function get(){
-        // alert("hi")
-        var li = document.createElement("li")
+    var Todo_list=[]
 
-        input=document.getElementById("task").value;
-        console.log("task",input)
-        str=JSON.stringify(input);
-        localStorage.setItem("task",str);
-        obj=localStorage.getItem("task");
-
-        document.getElementById("a").append(obj);
+    window.onload =function(){
+        let localobj = JSON.parse(localStorage.getItem('obj'));
+        // let localobj=localStorage.getItem(JSON.parse('obj'));
+            if (localobj){
+                Todo_list = localobj;
+                showitem();
+            }
+        showitem()
     }
+
+    function  add(){
+        const todo = document.getElementById("task").value;
+        console.log(todo);
+        if(todo.length){
+            Todo_list.push({
+                id:Todo_list.length,
+                name:todo,
+                status:"not_done"
+            });
+            console.log(Todo_list)
+            document.getElementById("task").value="";
+            localStorage.setItem("obj",JSON.stringify(Todo_list));
+            showitem()
+        }
+        else{
+            document.getElementById("notification-container").innerHTML=`<div class="alert alert-danger" role="alert">A simple danger alert—check it out!<button type="button" class="btn-close" aria-label="Close"></button></div>`
+        }
+    }
+
+    function showitem(){
+        // alert("hi")
+        if(Todo_list.length){
+            let element="";
+            
+            let ul=document.getElementById("result_content").innerHTML=`<ul class="list-group" id="result"></ul>`
+            console.log(ul)
+
+            for(i=0;i<Todo_list.length;i++){
+                element+= `<li class="list-group-item list-group-item-action list-group-item-primary position-relative">
+                                        <input="form-check-input me-3" type="checkbox" value="">
+                                        <label class="form-check-label" for="">${Todo_list[i].name}</label>
+                                        <i class="bi bi-pencil-square position-absolute top-1 end-0 me-5 text-secondary icon-action"></i>
+                                        <i class="bi bi-trash-fill position-absolute top-1 end-0 me-3 text-secondary icon-action" onclick="del(${Todo_list[i].id})"></i></li>` 
+            }
+            
+
+            document.getElementById("result").innerHTML=element;
+
+                
+        }
+    }
+
+    function del(del){
+        console.log(del)
+        for(i=0;i<Todo_list.length;i++){
+            if(Todo_list[i].id==del){
+                Todo_list.splice(i,1);
+                console.log(Todo_list)
+                localStorage.setItem("obj",JSON.stringify(Todo_list))
+                showitem()
+            }
+        }
+    }
+
     
 </script>
 </html>
