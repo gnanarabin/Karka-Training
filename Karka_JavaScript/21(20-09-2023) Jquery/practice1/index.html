@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, iusto!</p>
+    <h2 class="para">Lorem ipsum dolor sit amet.</h2>
+    <button>click</button>
+    
+</body>
+<script>
+    $(document).ready(function(){
+
+        $("button").click(function(){
+            $("p").hide();
+        })
+        $("button").click (function(){
+            $("h2").toggle();
+        })
+    })
+        
+    
+</script>
+</html>

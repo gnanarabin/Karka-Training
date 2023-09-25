@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h3 class="all">hello</h3>
+    <p class="all">Welcome</p>
+    <button class="all">Click</button>
+    <p class="all">How Its My site</p>
+    <h5 class="all">Thankyou</h5>
+</body>
+    <script>
+        // $(document).ready(function(){
+        //     $(".all").click(function(){
+        //         $(this).hide();
+        //     })
+        // })
+        $(document).ready(function(){
+            $("button").click(function(){
+                $('p:first').hide();
+            })
+        })
+    </script>
+</html>

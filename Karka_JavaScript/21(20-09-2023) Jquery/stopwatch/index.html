@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        *{
+            margin-top: 0;
+            padding: 0; 
+        }
+        body{
+            background-color: black;
+        }
+        section{
+            border: 1px solid black;
+            /* margin-top: 20px; */
+            height: 100vh;
+            /* display: flex;  
+            justify-content: center; */
+            background-color: white;
+        }
+
+        .container{
+            border: 1px solid black;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* color: white; */
+            
+        }
+        .stop{
+            width: 30%;
+            height: 300px;
+            /* margin: auto; */
+            /* margin-top: 100px; */
+            text-align: center;
+            border: 1px solid rgb(255, 255, 255);
+            /* background-color: antiquewhite; */
+            border-radius: 20px
+
+        }
+        p{
+            font-size: 30px;
+        }
+        .button{
+            /* width: 50%; */
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        button{
+            width: 100px;
+            border: none;
+            border-radius: 10px;
+        }
+        .show-div {
+            display: flex;
+            /* border: 1px solid black; */
+            justify-content: space-around;
+            margin-top: 50px;
+            font-size: 30px;
+            
+        }
+        .form-check{
+            margin-top: 40px;
+            text-align: start;
+        }
+        .form-check input{
+            margin-left: 40px !important;
+        }
+        .form-check label{
+            padding-left: 10px;
+        }
+
+        .bg-color{
+            background-color: black;
+        }
+        .color{
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <section class="over-body">
+        <div class="container">
+            
+            <div class="stop">
+                <h1>Stopwatch</h1>
+                <div class="show-div" >
+                    <!-- <div id="hr" class="hr">00</div> -->
+                    <div id="min" class="min">00</div>
+                    <div id="sec" class="sec">00</div>
+                    <div id="milli_sec" class="milli_sec">00</div>
+                </div>
+                <div class="button">
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                    <button id="reset">Reset</button>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Click To Dark Mode</label>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script>
+    
+    var milli_sec=0;
+    var sec=0;
+    var min=0;
+    var hr=0;
+    let interval;
+
+    let running="false"
+
+    $("#start").click(function(){
+             if(running=="false"){
+                interval=setInterval(function(){
+                milli_sec++;
+                if(milli_sec>100){
+                    sec++
+                    milli_sec=0
+                    if(sec>60){
+                        min++
+                        sec=0
+                    }
+                }
+                $("#milli_sec").text(milli_sec);
+                $("#sec").text(sec);
+                $("#min").text(min);
+        })
+        }
+        running="true"
+
+    })
+
+    $("#stop").click(function(){
+        clearInterval(interval)
+
+        running="false"
+    })
+
+    $("#reset").click(function(){
+
+        milli_sec=0;
+        sec=0;
+        min=0;
+     
+        $("#milli_sec").text("00")
+        $("#sec").text("00")
+        $("#min").text("00")
+        running="false"
+    })
+
+
+    $("#flexSwitchCheckDefault").click(function(){
+        $(".over-body").toggleClass("bg-color color")
+    }) 
+
+       
+
+</script>
+</html>

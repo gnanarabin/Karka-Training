@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h3 >hello</h3>
+    <p class="all">Welcome</p>
+    <div class="sec">main-div
+        <div>sub-div</div>
+    </div>
+    <input type="text" class="in">
+    <br>
+    <button >Click</button>
+    <p >How Its My site</p>
+    <h5 >Thankyou</h5>
+</body>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".sec div").fadeToggle(1000);
+            })
+        })
+    </script>
+</html>

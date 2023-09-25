@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th>col1</th>
+            <th>col2</th>
+        </tr>
+        <tr>
+            <td>1st</td>
+            <td>1st</td>
+        </tr>
+        <tr>
+            <td>2nd</td>
+            <td>2nd</td>
+        </tr>
+        <tr>
+            <td>3rd</td>
+            <td>3rd</td>
+        </tr>
+        <tr>
+            <td>4th</td>
+            <td>4th</td>
+        </tr>
+    </table>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $("tr:even").css("background","red")
+    })
+</script>
+</html>

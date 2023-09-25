@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div>
+        <img src="img/freepikcompany.png" alt="">
+
+        </div>
+        <div class="head-nav">
+            <ul>
+                <li>Home</li>
+                <li>Icons</li>
+                <li>Blog</li>
+                <li>AboutUs</li>
+            </ul>
+        </div>
+        <div class="button-div">
+            <button class="login">LogIn</button>
+            <button>signUp</button>
+        </div>
+    </header>
+    <section>
+        <aside id="aside">
+            
+            <ul>
+                <li>Home</li>
+                <li>Icons</li>
+                <li>Blog</li>
+                <li>AboutUs</li>
+            </ul>
+        </aside>
+        <main>
+            <!-- <button for="cl" ><i id="click" class="fa-solid fa-bars" for="cl"></i></button> -->
+            <button id="click"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></button>
+              <button id="click2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></button>
+            <div class="stop">
+                <h1>Stopwatch</h1>
+                <p id="display">00:00:00</p>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </main> 
+    </section>
+    <footer>
+        footer
+    </footer>
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $("#click").click(function(){
+            $("#aside").animate({
+                width:"60px"
+            })
+        })
+        $("#click2").click(function(){
+            $("#aside").animate({
+                width:"400px"
+            })
+        })
+    })
+</script>
+<script>
+    // Variables to track the stopwatch state
+    let isRunning = false;
+    let startTime = 0;
+    let interval;
+
+    // Function to format time as HH:MM:SS
+    function formatTime(milliseconds) {
+        const date = new Date(milliseconds);
+        return date.toISOString().substr(11, 8);
+    }
+
+    // Update the stopwatch display
+    function updateDisplay() {
+        const currentTime = isRunning ? Date.now() - startTime : startTime;
+        $('#display').text(formatTime(currentTime));
+    }
+
+    // Event handler for the Start button
+    $('#start').click(function() {
+        // alert("hi")
+        if (!isRunning) {
+            isRunning = true;
+            startTime = Date.now() - startTime;
+            interval = setInterval(updateDisplay, 1000);
+        }
+    });
+
+    // Event handler for the Stop button
+    $('#stop').click(function() {
+        if (isRunning) {
+            isRunning = false;
+            clearInterval(interval);
+        }
+    });
+
+    // Event handler for the Reset button
+    $('#reset').click(function() {
+        isRunning = false;
+        startTime = 0;
+        clearInterval(interval);
+        updateDisplay();
+    });
+
+    // Initial display
+    updateDisplay();
+</script>
+</html>

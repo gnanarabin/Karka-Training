@@ -97,7 +97,7 @@ nav{
          /* SECTION */
 
 section{
-    height: 1929px;
+    height: 1629px;
     background-color: rgb(219, 219, 219);
 }
 
@@ -248,7 +248,7 @@ section{
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    margin-top: 47px;
+    margin-top: 37px;
     
 }
 .search-div button{
@@ -325,6 +325,15 @@ section{
     -webkit-align-items: center;
     align-items: center;
   }
+
+  /* .swiper-slide img {
+    border: 1px solid red;
+    display: block;
+    width: 40%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+  } */
 
 .card-div{
     width: 100%;
@@ -433,7 +442,7 @@ section{
 }
 .end{
     /* margin-top: 40px; */
-    padding-top: 50px;
+    padding-top: 40px;
     width: 100%;
     background-color: #E7E7E7;
 
@@ -472,24 +481,9 @@ footer .foot-icon i{
     margin-left: 50px;
 }
 
-.gift-div{
-    border-radius: 10px;
-    width: 85%;
-    /* border: 1px solid black; */
-    margin: auto;
-    margin-top: 40px;
-    padding: 40px 40px;
-    background-color: white;
+
+.tab-div{
+    width: 70%;
+    border: 1px solid black;
 }
-.gift-content{
-    /* border: 1px solid black; */
-    /* display: flex; */
-    width: 60%;
-    font-size: 14px;
-}
-.gift-content span{
-    font-weight: bold;
-}
-.nav-img a:hover{
-    color: blue ;
-}
+
