@@ -1,0 +1,22 @@
+{
+    "persons":[
+        {
+            "f_name":"rabin",
+            "l_name":"jn",
+            "age":22,
+            "place":"ngl"
+        },
+        {
+            "f_name":"joseph",
+            "l_name":"antony",
+            "age":26,
+            "place":"vadaseri"
+        },
+        {
+            "f_name":"mark",
+            "l_name":"antony",
+            "age":30,
+            "place":"chennai"
+        }
+    ]
+}

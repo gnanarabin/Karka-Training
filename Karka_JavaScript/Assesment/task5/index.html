@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    Firstname:<input type="text" id="firstname">
+    <br>
+    <br>
+
+    Lastname:<input type="text" id="lastname">
+
+    <button>Submit</button>
+    <br>
+    <p></p>
+</body>
+<script>
+    $("button").click(()=>{
+        // let name1=document.getElementById("firstname").value
+        let f_name=$("#firstname").val();
+        let l_name=$("#lastname").val();
+       
+        $("p").append(f_name,l_name)
+      
+    })
+    
+</script>
+</html>

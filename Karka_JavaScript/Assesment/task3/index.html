@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        ul{
+            background-color: bisque;
+            width: 20%;
+            margin: auto;
+        }
+        li{
+            list-style: none;
+        }
+    </style>
+
+</head>
+<body style="text-align: center;">
+
+    <ul>
+        SET TIMEOUT FUNCTION
+    </ul>
+
+    <li id="li1">hi</li>
+    <li id="li2">Welcome to my site</li>
+    <li id="li3">we use delay function...</li>
+
+    <button>click</button>
+
+    
+
+    
+</body>
+<script>
+
+    // setTimeout(app,2000)
+
+    // function app(){
+    //     $("ul").text("hi")
+    // }
+    
+
+
+
+    //    OR
+
+    // $("button").click(function(){
+    //     setTimeout(()=>{
+    //         $("ul").text("hi")
+    //     },3000)
+        
+    // })
+
+
+    $(document).ready(function () {
+        $("li").hide()
+                $("button").click(function () {
+                    $("ul").append($("#li1").delay(2000).fadeIn())
+                    $("ul").append($("#li2").delay(3000).fadeIn())
+                    $("ul").append($("#li3").delay(4000).fadeIn())
+                    // $("#li1").delay(2000).fadeIn();
+                    // $("#li2").delay(3000).fadeIn();
+                    // $("#li3").delay(4000).fadeIn();
+                });
+    });
+    
+    
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        p{
+        background: blue;
+        color: white;
+            }
+
+        .db2 {
+        background: yellow;
+        color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p>Double-click here to change the background color.</p>
+
+</body>
+<script>
+    $("p").dblclick(()=>{
+        $("p").toggleClass("db1 db2")
+    })
+</script>
+</html>

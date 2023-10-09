@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .focusedin {
+           background: green;
+           color: white;
+             }
+        .focusedout {
+           background: blue;
+           color: white;
+             }
+      </style>
+      
+
+</head>
+<body>
+    First_Name : <input type="text" id="f_name">
+    <br>
+    <br>
+
+    Last_Name : <input type="text" id="l_name">
+    
+</body>
+<script>
+
+    $("#f_name").focusin(()=>{
+        $("#f_name").css("background","green")
+        // $("#l_name,").addClass  ("focusedin")
+    })
+    $("#l_name").focusin(()=>{
+        $("#l_name").css("background","green")
+        // $("#l_name,").addClass  ("focusedin")
+    })
+
+    $("#f_name").focusout(()=>{
+        $("#f_name").css ("background","blue")
+    })
+    $("#l_name").focusout(()=>{
+        $("#l_name").css ("background","blue")
+    })
+    
+
+</script>
+</html>

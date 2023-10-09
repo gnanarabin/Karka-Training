@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    
+}
+body div{
+    width: 24.75%;
+    display: inline-block;
+    padding: 100px 0px;
+    text-align: center;
+}
+@media only screen and (max-width:1200px){
+    body div{
+        width: 24.7%;
+        display: inline-block;
+        padding: 100px 0px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:992px){
+    body div{
+        width: 32.9%;
+        display: inline-block;
+        padding: 100px 0px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:776px){
+    body div{
+        width: 49%;
+        display: inline-block;
+        padding: 100px 0px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:556px){
+    body div{
+        width: 100%;
+        display: inline-block;
+        padding: 100px 0px;
+        text-align: center;
+    }
+}
+
+
+

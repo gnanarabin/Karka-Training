@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body style="text-align: center;">
+    <h2 id="milli_sec">00</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <p></p>
+</body>
+<script>
+    var millisec=0;
+    $("#start").click(()=>{
+        interval=setInterval(()=>{
+            millisec++;
+
+            $("#milli_sec").text(millisec);
+
+        })
+    })
+    $("#stop").click(()=>{
+        clearInterval(interval)
+    
+       
+    })
+    
+</script>
+</html>

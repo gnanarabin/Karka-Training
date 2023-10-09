@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $(".state").hide();
+    $(".district").hide();
+    
+})
+
 let data=[];
 
 $.get("index.json",(json)=>{
@@ -16,11 +22,12 @@ $("#country").click(()=>{
     for(i=0;i<countries.length;i++){
         console.log(countries[i].countryName)
 
-        $("#ul").append(`<li onclick="country(${i})"><button class="dropdown-item" type="button">${countries[i].countryName}</button></li>`)
+        $("#ul").append(`<li id="state-div" onclick="country(${i})"><button class="dropdown-item" type="button">${countries[i].countryName}</button></li>`)
     }
 })
 
 function country(country_id){
+    $(".state").show()
     console.log(country_id)
 
     let state=data[0].countries[country_id].states;
@@ -38,6 +45,9 @@ function country(country_id){
 }
 
 function state(state_id,country_id){
+
+    $(".district").show()
+
     let district=data[0].countries[country_id].states[state_id].districts;
     console.log(district)
 

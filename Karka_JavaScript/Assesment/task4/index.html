@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <p id="one">One-click Click me!</p>
+    <p id="two">Double-click Click me!</p>
+</body>
+<script>
+    $("#one").click(()=>{
+        $("#one").append("This is a One-click Event")
+    })
+
+    $("#two").dblclick(()=>{
+        $("#two").append("This is a double-click Event")
+    })
+
+</script>
+</html>
