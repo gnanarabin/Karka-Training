@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width:768px){
+
+    .img-div{
+        margin-top: 5% ;
+    }
+
+}
