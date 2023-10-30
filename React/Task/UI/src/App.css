@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sub-div{
+  margin-top: 20px;
+  width: 30%;
+  padding: 20px 20px;
+  border: 1px solid black;
+  background-color: red;
+}
+/* .input-div{
+  padding: 10px 20px ;
+  border: 1px solid black;
+  background-color: green;
+} */
+.display{
+  background-color: white;
+  margin-top: 5px;
+  height: 40px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 25px;
+  text-align: end;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(96, 96, 96);
+}
+.row{
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  margin-bottom: 20px;
+ 
+}
+.row button{
+  flex-grow: 1;
+  padding: 5px 0px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  width: 0px;
+}
+
+.grid{
+  background-color: red;
+}
+.col{
+  width: 300px;
+  height: 300px;
+}
