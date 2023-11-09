@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fetch{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(135, 244, 246), rgb(162, 154, 254), rgb(213, 130, 255));
+    /* background-color: black;
+    color: white; */
+    /* position: relative; */
+
+
+
+
+}
+.fetch .form {
+    padding: 30px 50px;
+    width: 25%;
+    /* border: 1px solid black; */
+    /* text-align: center; */
+    background-color: white;
+    border-radius: 5px;
+}
+.form .heading-div{
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px dotted red;
+    margin-bottom: 20px;
+}
+.heading-div h1{
+    font-size: 30px;
+}
+.label-div{
+    /* border: 1px solid black; */
+    /* margin-bottom: 20px; */
+}
+.label-div label{
+    font-size: 17px;
+}
+.input-div{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.input-div input{
+    width: 100%;
+    height: 35px;
+}
+.button-div{
+    width: 100%;
+}
+.button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(135, 244, 246), rgb(138, 127, 255), rgb(150, 89, 180));
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+.form li {
+    display: flex;
+    /* text-align: center !important; */
+}
+li button{
+    margin-left: 20px;
+}
+.card-show{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: bisque; */
+}
+.card-show{
+    background-color: #EBEBEB;
+}
+.card-body img{
+    height: 150px;
+}
+.card-display{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    border: 1px solid black;
+    margin: auto;
+    
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-div{
+    background-color: #B8C1CB;
+    width: 100%;
+    height: 100vh;
+}
+.table{
+    text-align: center;
+}
+.table th{
+    background-color:#555B64;
+    color: white;
+}
+.table td{
+    background-color: #282B32;
+    color: white;
+}
+.table tbody tr:hover td{
+    background-color: rgba(0, 0, 0, 0.808)
+}
+tbody button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: black; */
+    background-color: #599498;
+    color: white;
+}
+tbody tr td button:hover {
+    background-color: rgb(10, 55, 55);
+}
+
+.pagination{
+    margin-left: 20px;
+}
+.pagination button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+
+
+.pagination span{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+

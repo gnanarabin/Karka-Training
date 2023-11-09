@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route,Routes,useNavigate,BrowserRouter,  } from 'react-router-dom'
 import Login from './Login'
 
@@ -11,6 +11,8 @@ const FormValid = () => {
         const [name,value]=[e.target.name,e.target.value]
         setData((ele)=>({...ele,[name]:value}))
     }
+
+    
     function handle_user(e){
         // var username=(data.firstname).concat(data.lastname)
         
@@ -28,7 +30,7 @@ const FormValid = () => {
         else{
             setData((ele)=>({...ele,username:""}))
         }
-    } 
+    }
     
 
     function show1(){

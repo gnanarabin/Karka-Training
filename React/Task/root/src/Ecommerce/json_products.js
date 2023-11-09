@@ -5,7 +5,8 @@ export const product=[
         price:10.90,
         size:"L",
         quantity:1,
-        img:"/Images/1.png"
+        img1:"/Images/1.png",
+        img2:"/Images/1(1).png"
 
     },
     {
@@ -14,7 +15,10 @@ export const product=[
         price:13.25,
         size:"L",
         quantity:1,
-        img:"/Images/2.png"
+        img1:"/Images/2.png",
+        img2:"/Images/2(2).png"
+
+
 
     },
     {
@@ -23,7 +27,9 @@ export const product=[
         price:25.90,
         size:"XL",
         quantity:1,
-        img:"/Images/3.png"
+        img1:"/Images/3.png",
+        img2:"/Images/3(3).png"
+
 
     },
     {
@@ -32,7 +38,9 @@ export const product=[
         price:29.45,
         size:"XXL",
         quantity:1,
-        img:"/Images/4.png"
+        img1:"/Images/4.png",
+        img2:"/Images/4(4).png"
+
 
     },
     {
@@ -41,7 +49,9 @@ export const product=[
         price:10.90,
         size:"XL",
         quantity:1,
-        img:"/Images/5.png"
+        img1:"/Images/5.png",
+        img2:"/Images/5(5).png"
+
 
     },
     {
@@ -50,7 +60,9 @@ export const product=[
         price:9.00,
         size:"L",
         quantity:1,
-        img:"/Images/6.png"
+        img1:"/Images/6.png",
+        img2:"/Images/6(6).png"
+
 
     },
     {
@@ -59,7 +71,9 @@ export const product=[
         price:14.00,
         size:"M",
         quantity:1,
-        img:"/Images/7.png"
+        img1:"/Images/7.png",
+        img2:"/Images/7(7).png"
+
 
     },
     {
@@ -68,7 +82,9 @@ export const product=[
         price:10.90,
         size:"ML",
         quantity:1,
-        img:"/Images/8.png"
+        img1:"/Images/8.png",
+        img2:"/Images/8(8).png"
+
 
     },
     {
@@ -77,7 +93,9 @@ export const product=[
         price:14.90,
         size:"ML",
         quantity:1,
-        img:"/Images/9.png"
+        img1:"/Images/9.png",
+        img2:"/Images/9(9).png"
+        
 
     },
     {
@@ -86,7 +104,9 @@ export const product=[
         price:14.90,
         size:"S",
         quantity:1,
-        img:"/Images/10.png"
+        img1:"/Images/10.png",
+        img2:"/Images/10(10).png"
+
 
     },
     {
@@ -95,7 +115,9 @@ export const product=[
         price:10.90,
         size:"ML",
         quantity:1,
-        img:"/Images/11.png"
+        img1:"/Images/11.png",
+        img2:"/Images/11(11).png"
+
 
     },
     {
@@ -104,7 +126,9 @@ export const product=[
         price:49.90,
         size:"XXL",
         quantity:1,
-        img:"/Images/12.png"
+        img1:"/Images/12.png",
+        img2:"/Images/12(12).png"
+
 
     },
     {
@@ -113,7 +137,9 @@ export const product=[
         price:22.50,
         size:"ML",
         quantity:1,
-        img:"/Images/13.png"
+        img1:"/Images/13.png",
+        img2:"/Images/13(13).png"
+
 
     },
     {
@@ -122,7 +148,9 @@ export const product=[
         price:18.70,
         size:"S",
         quantity:1,
-        img:"/Images/14.png"
+        img1:"/Images/14.png",
+        img2:"/Images/14(14).png"
+
 
     },
     {
@@ -131,7 +159,9 @@ export const product=[
         price:134.90,
         size:"L",
         quantity:1,
-        img:"/Images/15.png"
+        img1:"/Images/15.png",
+        img2:"/Images/15(15).png"
+
 
     },
     {
@@ -140,7 +170,9 @@ export const product=[
         price:49.00,
         size:"XS",
         quantity:1,
-        img:"/Images/16.png"
+        img1:"/Images/16.png",
+        img2:"/Images/16(16).png"
+
 
     },
 

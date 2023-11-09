@@ -14,11 +14,11 @@
 form{
   width: 40%;
   padding: 40px 40px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-color: white;
 }
 form div{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 50px;
   display: flex;
   align-items: center;
@@ -37,154 +37,4 @@ form div input{
   border: 2px solid blue; /* Border color when focused */
 }
 
-/* Ecommerce */
 
-.main-div{
-  position: relative;
-}
-.container{
-  /* background-color: antiquewhite; */
-  height: 50vh;
-  margin: auto;
-  width: 100%;
-  margin-top: 10%;
-}
-
-.filter-div{
-  border: 1px solid black;
-}
-.product-div{
-  border: 1px solid black;
-}
-.filter-size{
-  font-weight: bold;
-}
-.first-row-btn,.second-row-btn{
-  display: flex;
-  justify-content: space-between;
-  
-}
-.second-row-btn{
-  display: flex;
-  justify-content: space-around;
-  
-}
-.first-row-btn button,.second-row-btn button{
-  border: none;
-  width: 35px;
-  height: 35px;
-  border-radius: 30px;
-  font-size: 16px;
-}
-.second-row-btn button{
-  margin-top: 20px;
-}
-
-
-.img-div{
-  width: 100%;
-  border: 1px solid black;
-  height: 300px;
-}
-.img-div img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.product-description{
-  text-align: center;
-}
-.product-description hr{
-  width: 20px;
-  margin: auto;
-  /* padding: 20px; */
-  border-top: 3px solid rgb(194, 165, 6);
-  
-}
-.product-detail{
-  margin-bottom: 20px;
-}
-.brand-detail{
-  height: 50px;
-  /* border: 1px solid black; */
-}
-.product-detail button{
-  width: 100%;
-  height: 45px;
-  /* background-color: black;
-  color: white; */
-  border: none;
-}
-.hoverbtn{
-  background-color: goldenrod;
-  transition:.10s ease;
-  color: white;
-}
-.unhoverbtn{
-  background-color: black;
-  transition:.10s ease;
-  color: white;
-}
-
-.cart-div{
-  /* border: 1px solid black; */
-  /* display: flex;
-  justify-content: center; */
-  background-color: rgba(0, 0, 0, 0.569);
-  color: white;
-}
-.cart-div-btn{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-}
-.cart-div-btn button{
-  margin-top: 30px;
-  border: none;
-  width: 100px;
-  height: 40px;
-  border-radius: 40px;
-}
-.cart-div hr{
-  width: 40%;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-  border-top: 3px solid rgb(134, 2, 2);
-}
-.cart-true{
-  width: 100%;
-  /* border: 1px solid red; */
-}
-.true1{
-  width: 100%;
-  /* border: 1px solid yellow; */
-}
-.cart-true button{
-  border: none;
-  border-radius: 30px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  width: 100px;
-  padding: 10px 0px;
-  display: flex;
-  justify-content: center;
-  
-}
-.cart-true img{
-  /* width: 200px; */
-  width: 100%;
-}
-.cart-comp{
-  position: absolute;
-  justify-content: end;
-  /* text-align: end; */
-  left: 75%;
-  display: flex;
-  border: 1px solid black;
-}
-.inside-cart{
-  width: 100%;
-}
