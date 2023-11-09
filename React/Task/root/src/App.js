@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 // import './App.css';
 // import './AdminForm/css/style.css'
-// import '../src/Ecommerce/CSS/style.css'
 import { BrowserRouter,Route,Router,Routes } from 'react-router-dom';
 import Home from './Components/Home'
 import Contact from './Components/Contact'
@@ -29,7 +28,7 @@ function App() {
       {/* <Index/> */}
       {/* <SubIndex/> */}
       {/* <Highlight/> */}
-      {/* <Display/> */}
+      <Display/>
       {/* <Fetch/>   */}
       {/* <DisplayAdmin/> */}
       {/* <Data/> */}

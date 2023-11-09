@@ -44,10 +44,11 @@ const Cart = ({ cart, setCart}) => {
             {/* <hr /> */}
             {(click) ?
                 <div className='row inside-cart m-0 p-0' >
-                    <div className='cart-true row m-0 p-0'>
-                        <button className='row' onClick={() => setClick(false)}>Close</button>
-                        
-                        <div className='true1 row p-0 m-0'>
+                    <div className='cart-true row m-0 '>
+                        <div className='close-btn'>
+                            <button className='row' onClick={() => setClick(false)}>Close</button>
+                        </div>                        
+                        <div className='true1 row p-0 m-0 '>
                             {cart.map(ele => (
                                 <div className='img-detail row m-0 p-0'>
                                     <div className='col-8'>

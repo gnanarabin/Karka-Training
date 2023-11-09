@@ -3,6 +3,7 @@ import Filter from './Filter'
 import Products from './Products'
 import Cart from './Cart'
 import {product} from './json_products'
+import './CSS/style.css'
 
 
 const Display = () => {
