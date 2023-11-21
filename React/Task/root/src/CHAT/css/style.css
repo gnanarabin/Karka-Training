@@ -22,20 +22,17 @@ body{
 
 h2{
     text-align: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
-form  {
+/* form  {
     width: 35%;
-    /* height: 90vh; */
-    /* overflow-y: auto; */
+  
     margin-top: 50px;
-    /* margin-top: 20px; */
     padding: 20px 20px;
     border-radius: 10px;
-    /* text-align: center; */
-    background-color: rgb(126, 224, 249);
-}
+} */
+
 .label-div{
     margin-bottom: 5px;
 }
@@ -70,6 +67,7 @@ form  {
     align-items: center;
     justify-content: center;
     /* border: 1px solid black; */
+    background-color: #F8D9D2;
 }
 .sub-div{
     /* border: 5px solid black; */
@@ -131,7 +129,7 @@ form  {
 }
 .msg-field{
     width: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* height: 80vh; */
     padding: 0px 20px;
     margin-top: 40px;
@@ -188,7 +186,20 @@ margin-left: var(--t);
 place-self: end;
 }
 
+.regis-div{
+    background-color: #E9B7E6;
+    
+}
+.regis-div form{
+    background-color: black;
+    color: white !important;
+}
+.regis-div input{
+    background-color: rgb(163, 163, 163);
+}
+.regis-div .sub-div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 50px 76px 0px, rgba(0, 0, 0, 1.06) 0px 0px 0px 1px;
 
-
+}
 
 

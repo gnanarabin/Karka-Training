@@ -34,14 +34,7 @@ const LoginForm = () => {
       
     })
   
-      // if (
-      //   ((localdata.username == valid.username) && localdata.password == valid.password)
-      // ) {
-      //   alert("Successful login");
-      //   navigate('/chat'); // Make sure that the navigate function is working correctly
-      // } else {
-      //   alert("Username and password don't match");
-      // }
+    
   }
   return (
 
@@ -70,35 +63,7 @@ const LoginForm = () => {
         
       </div>
     </div>
-    // <div className='login-main-div'>
-    //   <div onChange={handle_change} >
-    //     <div className='login-font'>
-    //       <p>Login</p>
-    //       <hr></hr>
-    //     </div>
-    //     <div className='label-div'>
-    //       <label>Username : </label>
-    //     </div>
-    //     <div className='input-div'>
-    //       <input type='text' id='username' name='username' placeholder='enter your username...'></input>
-    //     </div>
-    //     <div className='label-div'>
-    //       <label>Password : </label>
-    //     </div>
-    //     <div className='input-div'>
-    //       <input type='password' id='password' name='password' placeholder='enter the password...'></input>
-    //     </div>
-
-    //     <div className='btn-div'>
-    //       <button type='button' onClick={handle_submit}>Login</button>
-    //     </div>
-    //     <br></br>
-    //     <div>
-    //       <p>did you register your account? ? <span><Link to={"/"}>Register </Link></span></p>
-    //     </div>
-
-    //   </div>
-    // </div>
+   
   )
 }
 
