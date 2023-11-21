@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Route,Routes,useNavigate,BrowserRouter,  } from 'react-router-dom'
-import Login from './Login'
+import { useNavigate } from 'react-router-dom'
+
 
 const FormValid = () => {
     const navigate=useNavigate()
@@ -118,6 +118,8 @@ const FormValid = () => {
            
             
         </form>
+
+        
         
     </div>
   )

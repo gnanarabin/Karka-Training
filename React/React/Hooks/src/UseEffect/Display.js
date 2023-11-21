@@ -1,17 +1,20 @@
-// import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
-// const Display = () => {
-//     useEffect(()=>{
-//         const count=useRef(0)
-//         alert(count.current)
-//         count.current = count.current + 1
-//         alert("You clicked "+ count.current + 'times... ')
-//     })
+const Display = () => {
 
-    
-//   return (
-//     <div>Display</div>
-//   )
-// }
+    const [count, setCount] = useState(0);
 
-// export default Display
+    useEffect(() => {
+        let timer=setTimeout(() => {
+            setCount((count) => count + 1);
+        }, 1000);
+
+        return () => clearTimeout(timer)
+    }, []);
+
+    return <h1>I've rendered {count} times!</h1>;
+
+
+}
+
+export default Display

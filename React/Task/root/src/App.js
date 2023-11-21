@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 // import './App.css';
-// import './AdminForm/css/style.css'
 import { BrowserRouter,Route,Router,Routes } from 'react-router-dom';
 import Home from './Components/Home'
 import Contact from './Components/Contact'
@@ -15,6 +14,8 @@ import InputFilter from './Filter/InputFilter';
 import FaqQuestion from './FAQ/FaqQuestion';
 import CrudComponent from './CURD/CrudComponent';
 import CurdDisplay from './CURD/CurdDisplay';
+import MainDisplay from './CHAT/MainDisplay';
+import Parent from './PropsDrilling/Parent';
 
 function App() {
   return (
@@ -28,14 +29,16 @@ function App() {
       {/* <Index/> */}
       {/* <SubIndex/> */}
       {/* <Highlight/> */}
-      <Display/>
+      {/* <Display/> */}
       {/* <Fetch/>   */}
       {/* <DisplayAdmin/> */}
       {/* <Data/> */}
       {/* <InputFilter/> */}
       {/* <FaqQuestion/> */}
-      {/* <CrudComponent/>       */}
+      {/* <CrudComponent/> */}
       {/* <CurdDisplay/> */}
+      <MainDisplay/>
+      {/* <Parent/> */}
     </div>
   );
 }

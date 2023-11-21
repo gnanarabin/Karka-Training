@@ -54,20 +54,6 @@ const RegistrationForm = () => {
         else{
             alert("data dosent matched  or please fill full detail")
         }
-
-        // if (userdata.pass == userdata.confirm_pass) {
-        //     setLocalData((prev) => {
-        //         return ([...prev, userdata])
-        //     })
-        //     setTimeout(() => {
-
-        //         navigate('/login')
-
-        //     }, 1000);
-        // }
-        // else {
-        //     return alert("password and confirm password dosen't match")
-        // }
     }
 
     useEffect(() => {

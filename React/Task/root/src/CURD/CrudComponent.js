@@ -137,7 +137,7 @@ const CrudComponent = () => {
     <div className='fetch'>
       <div className='form' onChange={handleChange}>
         <div className='heading-div'>
-          <h1>Register Form</h1>
+          <h1>Register Form </h1>
         </div>
       
         <div className='label-div'>

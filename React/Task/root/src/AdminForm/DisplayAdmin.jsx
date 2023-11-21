@@ -4,6 +4,8 @@ import RegistrationForm from './RegistrationForm'
 import LoginForm from './LoginForm'
 import Data from './Data'
 import Admin from './Admin'
+// import './css/style.css'
+
 // import Data from './Admin'
 // import SignupForm from './SignupForm'
 

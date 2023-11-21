@@ -9,6 +9,7 @@ import Login from "./Form1/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Todo from "./TodoList/Todo";
 import UseRef from "./UseRef/UseRef";
+import Display from "./UseEffect/Display";
 // import Display from "./UseEffect/Display";
 
 
