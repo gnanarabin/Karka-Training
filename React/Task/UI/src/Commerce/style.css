@@ -1,0 +1,107 @@
+.filter-btn button{
+    width: 100px;
+}
+
+.filter-div{
+    /* border: 1px solid black; */
+}
+.product-div{
+    /* border: 1px solid black; */
+    
+}
+.filter-size{
+    font-weight: bold;
+  }
+  .first-row-btn,.second-row-btn{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .second-row-btn{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .third-row-btn{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* border: 1px solid black; */
+  }
+  .third-row-btn button{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  .first-row-btn button,.second-row-btn button{
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  .second-row-btn button{
+    margin-top: 20px;
+  }
+
+
+.container{
+    /* background-color: antiquewhite; */
+    /* height: 80vh;
+    overflow-y: auto; */
+    margin: auto;
+    width: 100%;
+    /* margin-top: 10%; */
+}
+
+.img-div{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 300px;
+  }
+  .img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-description{
+    text-align: center;
+  }
+  .product-description hr{
+    width: 20px;
+    margin: auto;
+    /* padding: 20px; */
+    border-top: 3px solid rgb(194, 165, 6);
+    
+  }
+  .product-detail{
+    margin-bottom: 20px;
+  }
+  .brand-detail{
+    height: 50px;
+    /* border: 1px solid black; */
+  }
+
+  .product-detail button{
+    width: 100%;
+    height: 45px;
+    /* background-color: black;
+    color: white; */
+    border: none;
+  }
+  .hoverbtn{
+    background-color: goldenrod;
+    transition:.10s ease;
+    color: white;
+  }
+  .unhoverbtn{
+    background-color: rgb(1, 40, 65);
+    transition:.10s ease;
+    color: white;
+  }

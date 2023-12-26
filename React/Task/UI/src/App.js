@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import Gallery from './gallery/Gallery';
 import Json_Gallery from './gallery/Json_Gallery';
 import Is_packed from './is_packed/Is_packed';
@@ -13,6 +13,13 @@ import Display_Color from './Gradient_Color/Display_Color';
 import DisplayTree from './RenderTree/DisplayTree';
 import Img from './PhotoRendering/Img';
 import ToolBar from './RespondingEvents/ToolBar';
+import { Task } from './taskkk/Task';
+import { Task2 } from './taskkk/Task2';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import Cart from './Commerce/Cart';
+import DisplayProducts from './Commerce/DisplayProducts';
+import RoutingEcommerce from './Commerce/Routes/Routing';
+import FontAwesome from './FontAwesome/FontAwesome';
 
 
 
@@ -40,9 +47,19 @@ function App() {
       {/* <Display_Color/> */}
       {/* <DisplayTree/> */}
       {/* <Img/> */}
-      <ToolBar/>
+      {/* <ToolBar/> */}
+      <RoutingEcommerce/>
+      {/* <FontAwesome/> */}
+      {/* <Task2/> */}
+      
     </div>
   );
 }
+
+
+
+
+
+
 
 export default App;
