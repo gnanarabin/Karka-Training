@@ -13,13 +13,13 @@ import About from "./components/about";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Url from "./components/url";
+import Main from "./Router/Main";
+import RoutesPath from "./Router/RoutesPath";
 
 function App() {
   return (
     <div className="tag">
-      <BrowserRouter>
-        {/* {let url=useLocation().pathname} */}
-
+      {/* <BrowserRouter>
         <nav
           className="navbar bg-dark border-bottom border-body"
           data-bs-theme="dark"
@@ -42,7 +42,8 @@ function App() {
         </Routes>
 
         <Url />
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <RoutesPath/>
     </div>
   );
 }

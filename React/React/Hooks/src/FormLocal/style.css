@@ -1,0 +1,8 @@
+input{
+    display: block;
+    margin-bottom: 40px;
+}
+.main-form-div{
+    padding: 10% 40%;
+    border: 1px solid red;
+}

@@ -91,7 +91,7 @@ const Todo = () => {
 
                 <button type="button" className="btn btn-outline-primary" onClick={addToDoItem} id="clear_control_button">Add ToDo</button>
                 {/* <button type="button" className="btn btn-outline-primary"  onClick={handle_show} id="clear_control_button">Show</button> */}
-            </div>
+            </div>  
             <div id="todoConatiner" className="todoContainer position-relative">
                 <ul className='w-50 mx-auto m-0 p-3'>{(todo.map((ele, index) =>
 
