@@ -38,29 +38,29 @@ const RegisterForm = () => {
                     <img className='col-12' src={img} ></img>
                 </div>
 
-                <form className='col-6 content-div  p-2 ' onSubmit={handleSubmit(onSubmit)}>
+                <form className='col-6 content-div  py-2 px-4' onSubmit={handleSubmit(onSubmit)}>
 
                     <div className='mt-2 text-light mb-4'>
                         <h2>Register</h2>
                     </div>
-                    <div className='mb-2'>
+                    <div className='mb-3'>
                         <input placeholder='enter your firstname...' {...register("firstName", { required: true, maxLength: 20 })} className="form-control" id="" />
                         {errors.firstName && <span>First name is required</span>}
                     </div>
-                    <div className='mb-2'>
+                    <div className='mb-3'>
                         <input placeholder='enter your lastname...' {...register("lastName", { required: true, maxLength: 10, pattern: /^[A-Za-z]+$/i })} className="form-control" id="" />
                         {errors.lastName && <span>Last name is required</span>}
                     </div>
-                    <div className='mb-2'>
+                    <div className='mb-3'>
                         <input placeholder='enter your username...' {...register("username", { required: true, maxLength: 20 })} className="form-control" />
                         {errors.username && <span>{errors.username.message}</span>}
 
                     </div>
-                    <div className='mb-2'>
+                    <div className='mb-3'>
                         <input placeholder='enter email...' {...register("email", { required: true, pattern: /^\S+@\S+$/i })} className="form-control" id="" />
                         {errors.email && <span>Valid email is required</span>}
                     </div>
-                    <div className='mb-2'>
+                    <div className='mb-3'>
                         <input placeholder='enter password...' type="password" {...register("password", { required: true, minLength: 6 })} className="form-control" id="" />
                         {errors.password && <span>Password must be at least 6 characters long</span>}
                     </div>
@@ -82,6 +82,7 @@ const RegisterForm = () => {
 
 
             </div>
+            
         </div>
         // <div className='RegisForm'>
         //     <div className='main-div'>

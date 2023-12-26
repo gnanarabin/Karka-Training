@@ -16,6 +16,8 @@ import CrudComponent from './CURD/CrudComponent';
 import CurdDisplay from './CURD/CurdDisplay';
 import MainDisplay from './CHAT/MainDisplay';
 import Parent from './PropsDrilling/Parent';
+import ProductFont from './task/ProductFont';
+import GameXO from './XO/GameXO';
 
 function App() {
   return (
@@ -38,7 +40,9 @@ function App() {
       {/* <CrudComponent/> */}
       {/* <CurdDisplay/> */}
       <MainDisplay/>
+      {/* <ProductFont/> */}
       {/* <Parent/> */}
+      {/* <GameXO/> */}
     </div>
   );
 }
