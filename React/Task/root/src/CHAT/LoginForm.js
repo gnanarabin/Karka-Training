@@ -39,7 +39,7 @@ const LoginForm = () => {
   return (
 
     <div className='w-100 container-fluid login-main-div '>
-      <div className='sub-div row  '>
+      <div className='login-sub-div row  '>
         <div className='col-6 content-div  p-4 '  onChange={handle_change}>
           <div className='mt-5'>
             <h2>LOGIN</h2>

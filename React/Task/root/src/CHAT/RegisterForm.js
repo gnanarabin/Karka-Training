@@ -32,8 +32,8 @@ const RegisterForm = () => {
 
     return (
 
-        <div className='w-100 container-fluid login-main-div regis-div'>
-            <div className='sub-div row  '>
+        <div className='w-100 container-fluid  regis-div '>
+            <div className='regis-sub-div row  '>
                 <div className='col-6 image-div   p-0'>
                     <img className='col-12' src={img} ></img>
                 </div>
